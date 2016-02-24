@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Gummybhaars!!! </title>
+
+		<!-- CSS -->
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+
+		<!-- JS -->
+		<script type="text/javascript" src="js/libs/dat.gui.min.js"></script>
+		<script type="text/javascript" src="js/libs/animationFrame.js"></script>
+		<script type="text/javascript" src="js/texter.js"></script>
+
+	</head>
+	<body>
+		<!-- APP -->
+		<canvas id='canvas'></canvas>
+		<script>
+			var texter = new Texter();
+			texter.initialize();
+			var gui = new dat.GUI();
+			gui.addColor(texter, 'textColor').name( 'Text Color' ).onChange( function(value) { texter.applyNewColor( value ) } );
+			gui.addColor(texter, 'bgColor').name( 'Background Color' ).onChange( function(value) { texter.setBackground( value ) } );
+			gui.add(texter, 'clear').name( 'Clear' );
+			gui.add(texter, 'save').name( 'Save' );
+		</script>
+	</body>
+
+</html>
