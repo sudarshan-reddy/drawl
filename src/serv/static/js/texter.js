@@ -5,7 +5,7 @@ function Texter() {
   // Application variables
   position = {x: 0, y: window.innerHeight/2};
   textIndex = 0;
-  this.textColor = "#FFF";
+  this.textColor = "#ffffff";
   this.bgColor = "#e13618";
   this.minFontSize = 25;
   this.maxFontSize = 80;
