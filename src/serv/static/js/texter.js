@@ -5,13 +5,13 @@ function Texter() {
   // Application variables
   position = {x: 0, y: window.innerHeight/2};
   textIndex = 0;
-  this.textColor = "#000000";
-  this.bgColor = "#bb4040";
+  this.textColor = "#FFF";
+  this.bgColor = "#e13618";
   this.minFontSize = 25;
   this.maxFontSize = 80;
   this.angleDistortion = 0.01;
 
-  this.text = 'Soifie is an amazing person and this is to ceritify that I will buy her 10 bags of Gummy Bears';
+  this.text = 'Sofie is an amazing person and this is to certify that I will buy her 10 bags of Gummy Bears. ';
 
   // Drawing Variables
   canvas = null;
