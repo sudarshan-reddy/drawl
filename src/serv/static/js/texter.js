@@ -1,11 +1,3 @@
-/*
- *  Texter - Drawing with Text.
- *  - Ported from demo in Generative Design book - http://www.generative-gestaltung.de
- *  - generative-gestalung.de original licence: http://www.apache.org/licenses/LICENSE-2.0
- *
- *  - Modified and maintained by Tim Holman - tholman.com - @twholman
- */
-
 function Texter() {
 
   var _this = this;
