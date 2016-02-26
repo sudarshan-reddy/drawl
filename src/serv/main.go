@@ -7,7 +7,7 @@ import("net/http"
 func main() {
 	fs := http.FileServer(http.Dir("/app/src/serv/static"))
 	port := os.Getenv("PORT")
-	//fs := http.FileServer(http.Dir("static"))
+	//fs = http.FileServer(http.Dir("static"))
 
 	if port == "" {
 		port = "5000"	

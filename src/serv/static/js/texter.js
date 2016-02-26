@@ -32,7 +32,10 @@ function Texter() {
     canvas.addEventListener('mousedown', mouseDown, false);
     canvas.addEventListener('mouseup',   mouseUp,   false);
     canvas.addEventListener('mouseout',  mouseUp,  false);
-
+    canvas.addEventListener('touchmove', mouseMove, false);
+    canvas.addEventListener('touchstart', mouseDown, false);
+    canvas.addEventListener('touchend',   mouseUp,   false);   
+    
     bgCanvas = document.createElement( 'canvas' );
     bgContext = bgCanvas.getContext( '2d' );
     bgCanvas.width = canvas.width;
